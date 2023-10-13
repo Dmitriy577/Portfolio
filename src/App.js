@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "./components/Banner";
-
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Services from "./components/Services";

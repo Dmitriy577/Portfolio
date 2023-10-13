@@ -16,10 +16,12 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-12 mb-10"
           >
             <div>
-              <h2 className="h2 leading-tight text-accent mb-10">My Work.</h2>
+              <h2 className="h2 leading-tight text-accent xl:mb-10 lg:mb-5">
+                My Work.
+              </h2>
               <p className="max-w-sm mb-16 text-xl">
                 The presented projects in this portfolio are created in the
                 study of various technologies and are introductory.
@@ -29,7 +31,7 @@ const Work = () => {
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className="flex cursor-pointer btn btn-lg items-center justify-center mb-14 w-72"
+                className="flex cursor-pointer btn btn-lg items-center justify-center xl:mb-14 w-72 lg:mb-0"
               >
                 Contact me
               </Link>

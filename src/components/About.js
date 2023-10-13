@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -18,7 +17,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-about bg-cotain bg-no-repeat h-[400px] mix-blend-lighten bg-top"
+            className="flex-1 bg-about bg-no-repeat h-[400px] mix-blend-lighten bg-center"
           ></motion.div>
           <motion.div
             variants={fadeIn("right", 0.3)}
