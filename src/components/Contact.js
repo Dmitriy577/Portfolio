@@ -11,8 +11,8 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [emailDirty, setEmailDirty] = useState(false);
   const [nameDirty, setNameDirty] = useState(false);
-  const [emailError, setEmailError] = useState("ghjklhjk;lk;");
-  const [nameError, setNameError] = useState("dfflhpnlo[pl");
+  const [emailError, setEmailError] = useState("");
+  const [nameError, setNameError] = useState("");
   const [formValid, setFormValid] = useState(false);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Contact = () => {
     const re =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(e.target.value).toLowerCase())) {
-      setEmailError("djh");
+      setEmailError("");
     } else {
       setEmailError("");
     }
@@ -37,9 +37,9 @@ const Contact = () => {
   const nameHandler = (e) => {
     setName(e.target.value);
     if (e.target.value.length < 3 || e.target.value.length > 15) {
-      setNameError("gergbtr");
+      setNameError("");
       if (e.target.value) {
-        setNameError("gget");
+        setNameError("");
       }
     } else {
       setNameError("");
